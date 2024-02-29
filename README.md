@@ -20,12 +20,7 @@ FSRs are basically a resistor that changes its resistive value (in ohms Ω) depe
 
 ### FIGURE 01 GRAPH OF FORCE vs RESISTANCE **
 
-
-
-
 ![image](https://user-images.githubusercontent.com/36288975/163532957-82d57567-a1c3-48c5-8a87-7ea66d6fca49.png)
-
-
 
 
 ### FIGURE 02 FORCE SENSITIVE RESITOR FOIL DISC TYPE  
@@ -46,20 +41,11 @@ The easiest way to measure a resistive sensor is to connect one end to power and
 ****That is, the voltage is proportional to the inverse of the FSR resistance.
 
 
-
-
-
-
-
-
-
-
 ![image](https://user-images.githubusercontent.com/36288975/163532979-a2a5cb5c-f495-442c-843e-bebb82737a35.png)
 
 
 
 ### FIGURE-03 CIRCUIT DIAGRAM
-
 
 
 ### PROCEDURE:
@@ -76,24 +62,41 @@ The easiest way to measure a resistive sensor is to connect one end to power and
 
 
 ### PROGRAM 
- *your roll no 
- * your name 
- * department and year 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+ 212222230125
+ SACHIN.C
+ AI-DS 2ND YEAR
+ ```c++
+int fsr;
+int LED=7;
+void setup()
+{
+  pinMode(LED, OUTPUT);
+  Serial.begin(9600);
+}
+
+void loop()
+{
+  fsr=analogRead(A0);
+  Serial.print("RAW VALUE = ");
+  Serial.println(fsr);
+  delay(1000);
+  int m;
+  m=map(fsr,0,159,0,10);
+  Serial.print("MAPPED VALUE = ");
+  Serial.println(m);
+  delay(1000);
+  
+  if(m>5)
+  {
+    digitalWrite(LED,HIGH);
+    delay(500);
+    digitalWrite(LED,LOW);
+    delay(500);
+  } 
+    
+}
+``
+
 
 ![image](https://user-images.githubusercontent.com/36288975/188804653-a3154e8e-2655-46f2-9dcd-f425dd1ba109.png)
 
@@ -117,16 +120,6 @@ EX:           μ = (1+3+4+7+8) / 5 = 4.6
 
 
 
+### RESULT
 
-
-
-
-
-
-
-
-
-
-
-
-### RESULTS : Arduino uno is interfaced with FSR and output values are indicated on a graph.
+Arduino uno is interfaced with FSR and output values are indicated on a graph.
