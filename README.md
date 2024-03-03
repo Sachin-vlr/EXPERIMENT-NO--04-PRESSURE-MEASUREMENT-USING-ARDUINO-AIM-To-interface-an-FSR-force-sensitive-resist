@@ -47,6 +47,12 @@ The easiest way to measure a resistive sensor is to connect one end to power and
 
 ### FIGURE-03 CIRCUIT DIAGRAM
 
+![image](https://github.com/Sachin-vlr/EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resist/assets/113497666/30dad932-4c53-40ae-a14c-517b99b52db2)
+
+### FIGURE -04 SCHEMATIC DIAGRAM
+
+![image](https://github.com/Sachin-vlr/EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resist/assets/113497666/dd651fa2-caa1-4d0e-8fa1-d0d44147be3d)
+
 
 ### PROCEDURE:
 1.	Connect the circuit as per the circuit diagram 
@@ -61,10 +67,14 @@ The easiest way to measure a resistive sensor is to connect one end to power and
 10.	Plot the graph for the output voltage vs the resistance 
 
 
-### PROGRAM 
+### PROGRAM
+
  212222230125
+ 
  SACHIN.C
+ 
  AI-DS 2ND YEAR
+ 
  ```c++
 int fsr;
 int LED=7;
@@ -95,13 +105,20 @@ void loop()
   } 
     
 }
-``
+```
 
 
 ![image](https://user-images.githubusercontent.com/36288975/188804653-a3154e8e-2655-46f2-9dcd-f425dd1ba109.png)
 
 
 ### TABLE -02 standard deviation table 
+
+![image](https://github.com/Sachin-vlr/EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resist/assets/113497666/ce2600d3-8c6c-485d-889b-2dd9c0ce6a92)
+
+### GRAPH
+
+![image](https://github.com/Sachin-vlr/EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resist/assets/113497666/84741bbe-2e90-46b5-aa2a-dbe3a8ceb515)
+
 ### Population Standard Deviation
 The population standard deviation, the standard definition of σ, is used when an entire population can be measured, and is the square root of the variance of a given data set. In cases where every member of a population can be sampled, the following equation can be used to find the standard deviation of the entire population:
 
@@ -114,9 +131,10 @@ N is the total number of values
 
 For those unfamiliar with summation notation, the equation above may seem daunting, but when addressed through its individual components, this summation is not particularly complicated. The i=1 in the summation indicates the starting index, i.e. for the data set 1, 3, 4, 7, 8, i=1 would be 1, i=2 would be 3, and so on. Hence the summation notation simply means to perform the operation of (xi - μ)2 on each value through N, which in this case is 5 since there are 5 values in this data set.
 
-EX:           μ = (1+3+4+7+8) / 5 = 4.6        
-σ = √[(1 - 4.6)2 + (3 - 4.6)2 + ... + (8 - 4.6)2)]/5
-σ = √(12.96 + 2.56 + 0.36 + 5.76 + 11.56)/5 = 2.577
+EX:          
+EX:
+μ = (1.11+2.02+3.09+4.03+5.09+6.12+7.09+8.12+9.03+10) / 10 = 6.2
+σ = √[(1.11 - 6.2)2 + (2.02 - 6.2)2 + ... + ( 10- 6.2)2)]/10 σ = √(17.64 +10.24+4.84+1.44+0.04+0.64+3.24+3.24+7.84+14.44)/10 = 2.521
 
 
 
