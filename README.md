@@ -107,11 +107,7 @@ void loop()
 }
 ```
 
-
-![image](https://user-images.githubusercontent.com/36288975/188804653-a3154e8e-2655-46f2-9dcd-f425dd1ba109.png)
-
-
-### TABLE -02 standard deviation table 
+### TABLE -01 standard deviation table 
 
 ![image](https://github.com/Sachin-vlr/EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resist/assets/113497666/ce2600d3-8c6c-485d-889b-2dd9c0ce6a92)
 
